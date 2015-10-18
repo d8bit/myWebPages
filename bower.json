@@ -1,0 +1,20 @@
+{
+  "name": "inicio",
+  "version": "0.0.0",
+  "authors": [
+    "Deibit <sickboy140@hotmail.com>"
+  ],
+  "description": "WebManagement",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "react": "~0.14.0"
+  }
+}

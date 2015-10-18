@@ -1,0 +1,21 @@
+.head {
+    margin-bottom: 50px;
+}
+
+.app {
+    margin-top: 10px;
+    height: 60px;
+}
+
+.app span {
+    display: inline-block;
+    border: solid 1px #ccc;
+    width: 100%;
+    height: 100%;
+    padding: 19px;
+}
+
+.app span:hover {
+    background: #ccc;
+    color: #fff;
+}
