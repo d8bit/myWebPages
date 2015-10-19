@@ -1,7 +1,6 @@
 var SearchForm = React.createClass({
   filter: function(event) {
     var value = $(event.target).val();
-    console.log(value);
   },
   render: function() {
     return (

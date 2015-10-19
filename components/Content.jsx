@@ -19,13 +19,7 @@ var Content = React.createClass({
             </div>
             <div className="row">
                 <div className="col-lg-12">
-                   {
-                       appsList.map(function (app){
-                          return (
-                              <AppBox link={app.link} name={app.name} />
-                          );
-                       })
-                   }
+                   <AppGroup apps={appsList} />
                 </div>
             </div>
         </div>
@@ -35,5 +29,5 @@ var Content = React.createClass({
 
 ReactDOM.render(
   <Content />,
-  document.body
+  document.getElementById('content')
 );
