@@ -1,11 +1,12 @@
 var Content = React.createClass({
   render: function() {
       var appsList = [
-          { name: "App 1", link: "#"},
-          { name: "App 2", link: "#"},
-          { name: "App 3", link: "#"},
-          { name: "App 4", link: "#"},
-          { name: "App 5", link: "#"}
+          { name: "Recytech", link: "http:///localhost/recytech"},
+          { name: "Mompadel", link: "http:///localhost/mompadel/web/public"},
+          { name: "Mompadel Admin", link: "http:///localhost/mompadel/mvstore"},
+          { name: "Mompadel Wordpress", link: "http:///localhost/mompadel/wordpress"},
+          { name: "JVLimpiezas", link: "http:///localhost/jvcalidad/web/public"},
+          { name: "Antonio G Ródenas", link: "http:///localhost/rodenas"},
       ];
     return (
         <div className="container-fluid">
