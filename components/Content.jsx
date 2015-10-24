@@ -1,4 +1,11 @@
 var Content = React.createClass({
+  getInitialState: function() {
+      return { filterInput: '' };
+  },
+  updateFilter: function (filterValue) {
+      this.setState({filterInput: filterValue});
+      this.refs.appGroup.props.filter = filterValue;
+  },
   render: function() {
       var appsList = [
           { name: "Recytech", link: "http:///localhost/recytech"},
@@ -16,11 +23,11 @@ var Content = React.createClass({
                 </div>
             </div>
             <div className="row">
-                  <SearchForm />
+                  <SearchForm applyFilter={this.updateFilter} />
             </div>
             <div className="row">
                 <div className="col-lg-12">
-                   <AppGroup apps={appsList} />
+                   <AppGroup ref="appGroup" apps={appsList} filter={this.state.filterInput} />
                 </div>
             </div>
         </div>
