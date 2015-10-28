@@ -4,7 +4,6 @@ var App = React.createClass({
   },
   updateFilter: function (filterValue) {
       this.setState({filterInput: filterValue});
-      this.refs.appGroup.props.filter = filterValue;
   },
   render: function() {
       var appsList = [];
