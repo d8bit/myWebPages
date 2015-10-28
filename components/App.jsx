@@ -1,4 +1,4 @@
-var Content = React.createClass({
+var App = React.createClass({
   getInitialState: function() {
       return { filterInput: '' };
   },
@@ -7,14 +7,10 @@ var Content = React.createClass({
       this.refs.appGroup.props.filter = filterValue;
   },
   render: function() {
-      var appsList = [
-          { name: "Recytech", link: "http:///localhost/recytech"},
-          { name: "Mompadel", link: "http:///localhost/mompadel/web/public"},
-          { name: "Mompadel Admin", link: "http:///localhost/mompadel/mvstore"},
-          { name: "Mompadel Wordpress", link: "http:///localhost/mompadel/wordpress"},
-          { name: "JVLimpiezas", link: "http:///localhost/jvcalidad/web/public"},
-          { name: "Antonio G Ródenas", link: "http:///localhost/rodenas"},
-      ];
+      var appsList = [];
+      for (i = 0; i < 1000; i++) {
+          appsList.push({name: "app " + i, link: "#"});
+      }
     return (
         <div className="container-fluid">
             <div className="row">
@@ -36,6 +32,6 @@ var Content = React.createClass({
 });
 
 ReactDOM.render(
-  <Content />,
-  document.getElementById('content')
+  <App />,
+  document.getElementById('app')
 );
