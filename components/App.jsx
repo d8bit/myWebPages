@@ -7,7 +7,7 @@ var App = React.createClass({
   },
   render: function() {
       var appsList = [];
-      for (i = 0; i < 1000; i++) {
+      for (var i = 0; i < 1000; i++) {
           appsList.push({name: "app " + i, link: "#"});
       }
     return (
