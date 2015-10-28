@@ -15,7 +15,7 @@ var App = React.createClass({
         <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-12 head">
-                    <h1>My fucking apps</h1>
+                    <h1>My apps</h1>
                 </div>
             </div>
             <div className="row">
