@@ -9,7 +9,7 @@ var App = React.createClass({
     },
     /* Load ajax data */
     componentDidMount: function() {
-        $.get('directories.php', function(result) {
+        $.post('directories.php', {path: this.props.htdocs_path}, function(result) {
             if (this.isMounted()) {
                 result = JSON.parse(result);
                 this.setState({
@@ -23,7 +23,6 @@ var App = React.createClass({
     },
     render: function() {
         var appsList = [];
-        console.log(this.state);
         for (i = 0; i < this.state.directories.length; i++) {
             appsList.push({name: this.state.directories[i], link: "http://localhost/" + this.state.directories[i]});
         }
@@ -47,7 +46,3 @@ var App = React.createClass({
     }
 });
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
