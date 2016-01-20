@@ -27,7 +27,7 @@ var App = React.createClass({
             appsList.push({name: this.state.directories[i], link: "http://localhost/" + this.state.directories[i]});
         }
         return (
-            <div className="container-fluid">
+            <div>
                 <div className="row">
                     <div className="col-lg-12 head">
                         <h1>{this.props.title}</h1>
