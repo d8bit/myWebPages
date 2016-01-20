@@ -5,24 +5,23 @@ var SearchForm = React.createClass({displayName: "SearchForm",
     render: function() {
       return (
           React.createElement("div", null, 
-              React.createElement("div", {className: "col-lg-12"}, 
+              React.createElement("div", {className: "col-lg-6"}, 
                   React.createElement("form", {action: "https://www.google.es/search", method: "GET", target: "_blank"}, 
                       React.createElement("div", {className: "form-group"}, 
                           React.createElement("label", {htmlFor: "googleSearcher"}, "Google"), 
                           React.createElement("input", {type: "text", className: "form-control", id: "googleSearcher", name: "q", placeholder: "Search in Google"})
                       )
                   )
-              ), 
-
-              React.createElement("div", {className: "col-lg-12"}, 
+              ), React.createElement("br", null), 
+              React.createElement("div", {className: "col-lg-6"}, 
                   React.createElement("form", {action: "http://www.stackoverflow.com/search", method: "GET", target: "_blank"}, 
                       React.createElement("div", {className: "form-group"}, 
                           React.createElement("label", {htmlFor: "stackSearcher"}, "Stack Overflow"), 
                           React.createElement("input", {type: "text", className: "form-control", id: "stackSearcher", name: "q", placeholder: "Search in Stack Overflow"})
                       )
                   )
-              ), 
-              React.createElement("div", {className: "col-lg-12"}, 
+              ), React.createElement("br", null), 
+              React.createElement("div", {className: "col-lg-6"}, 
                   React.createElement("form", {action: "", method: "POST"}, 
                       React.createElement("div", {className: "form-group"}, 
                           React.createElement("label", {htmlFor: "search"}, "Search"), 

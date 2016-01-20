@@ -13,6 +13,7 @@ var SearchForm = React.createClass({
                       </div>
                   </form>
               </div>
+
               <div className="col-lg-12">
                   <form action="http://www.stackoverflow.com/search" method="GET" target="_blank">
                       <div className="form-group">
