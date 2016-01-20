@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>D8bit</title>
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/desktop.css" type="text/css" />
-    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
-</head>
-<body>
-    <div class="container-fluid">
-        <div id="app"></div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <title>D8bit</title>
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+        <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="app"></div>
+        </div>
 
-    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="vendor/react/react.js"></script>
-    <script type="text/javascript" src="vendor/react/react-dom.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="vendor/react/react.js"></script>
+        <script type="text/javascript" src="vendor/react/react-dom.js"></script>
 
-    <script type="text/javascript" src="build/SearchForm.js"></script>
-    <script type="text/javascript" src="build/AppBox.js"></script>
-    <script type="text/javascript" src="build/AppGroup.js"></script>
-    <script type="text/javascript" src="build/App.js"></script>
+        <script type="text/javascript" src="build/SearchForm.js"></script>
+        <script type="text/javascript" src="build/AppBox.js"></script>
+        <script type="text/javascript" src="build/AppGroup.js"></script>
+        <script type="text/javascript" src="build/App.js"></script>
 
 
 
-    <script type="text/javascript" charset="utf-8">
-        $(document).ready(function() {
-            $('#googleSearcher').focus();
-        });
-    </script>
-</body>
+        <script type="text/javascript" charset="utf-8">
+            window.onload = function() {$('#googleSearcher').focus();};
+        </script>
+    </body>
 </html>
