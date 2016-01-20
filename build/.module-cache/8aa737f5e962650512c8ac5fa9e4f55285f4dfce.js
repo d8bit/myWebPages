@@ -1,6 +1,6 @@
 /* Application */
 var directories = '';
-var App = React.createClass({
+var App = React.createClass({displayName: "App",
     getInitialState: function() {
         return {
             directories: '',
@@ -27,26 +27,22 @@ var App = React.createClass({
             appsList.push({name: this.state.directories[i], link: "http://localhost/" + this.state.directories[i]});
         }
         return (
-            <div>
-                <div className="row">
-                    <div className="col-lg-12 head">
-                        <h1>{this.props.title}</h1>
-                    </div>
-                </div>
-                <div className="row">
-                    <SearchForm applyFilter={this.updateFilter} />
-                </div>
-                <div className="row">
-                    <div className="col-lg-12">
-                       <AppGroup ref="appGroup" apps={appsList} filter={this.state.filterInput} />
-                    </div>
-                </div>
-            </div>
+            React.createElement("div", null, 
+                React.createElement("div", {className: "row"}, 
+                    React.createElement("div", {className: "col-lg-12 head"}, 
+                        React.createElement("h1", null, this.props.title)
+                    )
+                ), 
+                React.createElement("div", {className: "row"}, 
+                    React.createElement(SearchForm, {applyFilter: this.updateFilter})
+                ), 
+                React.createElement("div", {className: "row"}, 
+                    React.createElement("div", {className: "col-lg-12"}, 
+                       React.createElement(AppGroup, {ref: "appGroup", apps: appsList, filter: this.state.filterInput})
+                    )
+                )
+            )
         );
     }
 });
 
-ReactDOM.render(
-  <App title="My Home" htdocs_path='/Applications/XAMPP/htdocs/' />,
-  document.getElementById('app')
-);
